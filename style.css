@@ -1,0 +1,113 @@
+/* RESET STYLE */
+html, *{
+    box-sizing: border-box;
+    color: #281B1B;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style Body e container */
+body{
+    background-color: #E5E5E5;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.containerBody{
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header{
+    background-color: #C8D8AA;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 16px;
+}
+header .containerHeader{
+    padding: 16px;
+    display: grid;
+}
+header h1{
+    margin-bottom: 8px;
+}
+header .containerHeader button{
+    background-color: #ade479;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 16px;
+}
+header .containerHeader button:hover{
+    background-color: #d4f5b5;
+}
+
+/* CORPO */
+main{
+    display: flex;
+    justify-content: center;
+}
+main h2{
+    margin-bottom: 8px;
+}
+main ul{
+    list-style: none;
+    display: grid;
+    justify-content: center;
+}
+main li{
+    padding: 8px;
+    font-size: 20px;
+    /*text-decoration: line-through;*/
+}
+
+/* RODAPÉ */
+footer{
+    bottom: 0;
+    height: 48px;
+    position: fixed;
+    max-width: 720px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #C8D8AA;
+    border-radius: 20px 20px 0 0;
+}
+footer .containerFooter{
+    margin-top: 8px;
+}
+.containerFooter{
+    text-align: center;
+}
+
+/* MODAL ADICIONAR TAREFA */
+.adicionarTarefa{
+    display: flex;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.containerAdicionarTarefa{
+    background-color: #D9D9D9;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 340px;
+    height: 130px;
+    align-items: center;
+    display: flex;
+}
+.containerAdicionarTarefa form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
